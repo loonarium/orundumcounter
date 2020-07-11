@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Orundumnator</title>
+</head>
+<body>
+    <div class="orundum-counter">
+        <form action="">
+            <div>
+                <label class="orundum-counter__label" for="orundum">How much Orundum do you have??</label>
+                <input class="orundum-counter__input" type="text" name="orundum">
+            </div>
+            <button>Get Pulls!</button>
+        </form>
+        <p class="result"></p>
+    </div>
+    <!-- <script>
+        let resultContainer = document.querySelector('.result');
+        let yourButton = document.querySelector('button');
+        
+        function getPulls(e) {
+            e.preventDefault();
+            let orundumQuantity = document.querySelector('input').value;
+            let pullsCost = "600";
+            let pullsAmount = (orundumQuantity / pullsCost);
+            let leftOrundum = (orundumQuantity % pullsCost); 
+            
+            resultContainer.innerHTML = `You have ${Math.floor(pullsAmount)} pulls and ${leftOrundum} Orundum left.`;
+            
+        }
+        
+        yourButton.addEventListener('click', getPulls);
+    </script> -->
+    <script type="text/javascript" src="orundumstuff.js"></script>
+</body>
+</html>
